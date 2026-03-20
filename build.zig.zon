@@ -1,0 +1,13 @@
+.{
+    .name = .zig_gtk_template,
+    .version = "0.0.1",
+    .dependencies = .{
+        .gobject = .{
+            .url = "https://github.com/ianprime0509/zig-gobject/releases/download/v0.3.1/bindings-gnome48.tar.zst",
+            .hash = "gobject-0.3.1-Skun7ImieQH565Ofp1xfaWsKyCKjIteuCXVoSta3HxDM",
+        },
+    },
+    .minimum_zig_version = "0.15.2",
+    .paths = .{""},
+    .fingerprint = 0x5057c27de69d4adb,
+}
