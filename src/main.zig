@@ -11,7 +11,7 @@ pub fn main() !void {
     std.process.exit(@intCast(status));
 }
 
-pub fn activate(app: *gtk.Application, _: ?*anyopaque) callconv(.c) void {
+fn activate(app: *gtk.Application, _: ?*anyopaque) callconv(.c) void {
     const window = gtk.ApplicationWindow.new(app).as(gtk.Window);
     gtk.Window.setTitle(window, "Window");
     gtk.Window.setDefaultSize(window, 200, 200);
